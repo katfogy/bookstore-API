@@ -16,7 +16,7 @@ use Log;
  *     title="Bookstore API",
  *     version="1.0",
  *     description="API documentation for the Bookstore application.",
- *     @OA\Contact(name="Your Name", email="your_email@example.com"),
+ *     @OA\Contact(name="Foga Kater Amos", email="katfogy@gmail.com"),
  * )
  */
 class AuthController extends Controller
