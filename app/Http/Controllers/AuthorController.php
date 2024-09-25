@@ -78,4 +78,23 @@ class AuthorController extends Controller
         $author->delete();
         return response()->json(null, 204);
     }
+
+
+    public function searchAuthor(Request $request)
+    {
+        $request->validate([
+            'query' => 'required|string|max:255',
+        ]);
+
+        $searchTerm = $request->input('query');
+
+        $authors = Author::where('name', 'LIKE', '%' . $searchTerm . '%')
+                    ->orWhere('bio', 'LIKE', '%' . $searchTerm . '%')
+                    ->get();
+        if($authors){
+            return response()->json(['data'=>$authors]);
+        }
+        return response()->json(['message'=>'Author not found']);
+
+    }
 }

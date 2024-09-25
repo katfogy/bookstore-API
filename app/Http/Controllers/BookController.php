@@ -80,4 +80,23 @@ class BookController extends Controller
         $book->delete();
         return response()->json(null, 204);
     }
+
+
+    public function searchBook(Request $request)
+    {
+        $request->validate([
+            'query' => 'required|string|max:255',
+        ]);
+
+        $searchTerm = $request->input('query');
+
+        $books = Book::where('title', 'LIKE', '%' . $searchTerm . '%')
+                    ->orWhere('description', 'LIKE', '%' . $searchTerm . '%')
+                    ->get();
+        if($books){
+            return response()->json(['data'=>$books]);
+        }
+        return response()->json(['message'=>'Book not found']);
+
+    }
 }
