@@ -93,7 +93,7 @@ class BookController extends Controller
     }
 
     /**
-     * @OA\Put(
+     * @OA\patch(
      *     path="/api/books/{id}",
      *     tags={"Books"},
      *     summary="Update a book",

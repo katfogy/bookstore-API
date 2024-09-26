@@ -82,7 +82,7 @@ class AuthorController extends Controller
     }
 
     /**
-     * @OA\Put(
+     * @OA\patch(
      *     path="/api/authors/{id}",
      *     tags={"Authors"},
      *     summary="Update an author",
@@ -121,6 +121,7 @@ class AuthorController extends Controller
 
         return response()->json(['data' => $author, 'message' => 'Author updated successfully']);
     }
+
 
     /**
      * @OA\Delete(
