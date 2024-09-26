@@ -15,6 +15,11 @@ This project is built with the [Laravel](https://laravel.com) framework, which p
 
 ## About the Project
 
+## login Credentials
+live link: https://book-store-frontend-8ss5.onrender.com 
+- email address: testuser@gmail.com
+- password: 123456789
+Link to frontend Repo: https://github.com/katfogy/book-store-frontend
 ### 1. API Endpoints
 
 #### Books:
@@ -49,7 +54,7 @@ To set up this project locally, follow the steps below:
 
 1. **Clone the Repository:**
     ```bash
-    git clone https://github.com/your-repository-link.git
+    git clone https://github.com/katfogy/bookstore-API.git
     cd project-directory
     ```
 
@@ -91,7 +96,7 @@ Now, the project should be up and running at [http://localhost:8000](http://loca
   
 ## Demo
 
-Once deployed, you can access the live demo here: **[Live Demo](#)** (Replace `#` with your live demo URL).
+Once deployed, you can access the live demo here: **[Live Demo](https://bookapi.skyedgeconsortium.ng/api/documentation)** (Replace `#` with your live demo URL).
 
 ## Learning Laravel
 
