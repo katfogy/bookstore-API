@@ -4,8 +4,8 @@
         "title": "Bookstore API",
         "description": "API documentation for the Bookstore application.",
         "contact": {
-            "name": "Your Name",
-            "email": "your_email@example.com"
+            "name": "Foga Kater Amos",
+            "email": "katfogy@gmail.com"
         },
         "version": "1.0"
     },
@@ -287,12 +287,37 @@
                     }
                 }
             },
-            "put": {
+            "delete": {
+                "tags": [
+                    "Authors"
+                ],
+                "summary": "Delete an author",
+                "operationId": "c04021713290d77b82e912ec58f94c36",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Author deleted successfully"
+                    },
+                    "404": {
+                        "description": "Author not found"
+                    }
+                }
+            },
+            "patch": {
                 "tags": [
                     "Authors"
                 ],
                 "summary": "Update an author",
-                "operationId": "2a9f154a4061c0d3257520aba98221a5",
+                "operationId": "03bf4e26fc688d88ed0bdfa67deb56ca",
                 "parameters": [
                     {
                         "name": "id",
@@ -328,31 +353,6 @@
                 "responses": {
                     "200": {
                         "description": "Author updated successfully"
-                    },
-                    "404": {
-                        "description": "Author not found"
-                    }
-                }
-            },
-            "delete": {
-                "tags": [
-                    "Authors"
-                ],
-                "summary": "Delete an author",
-                "operationId": "c04021713290d77b82e912ec58f94c36",
-                "parameters": [
-                    {
-                        "name": "id",
-                        "in": "path",
-                        "required": true,
-                        "schema": {
-                            "type": "integer"
-                        }
-                    }
-                ],
-                "responses": {
-                    "204": {
-                        "description": "Author deleted successfully"
                     },
                     "404": {
                         "description": "Author not found"
@@ -475,12 +475,37 @@
                     }
                 }
             },
-            "put": {
+            "delete": {
+                "tags": [
+                    "Books"
+                ],
+                "summary": "Delete a book",
+                "operationId": "1a9c26667c32b8ed5e5770d7a1cc9d5c",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Book deleted successfully"
+                    },
+                    "404": {
+                        "description": "Book not found"
+                    }
+                }
+            },
+            "patch": {
                 "tags": [
                     "Books"
                 ],
                 "summary": "Update a book",
-                "operationId": "f5ca658c501a803d68655af0365e3802",
+                "operationId": "1799670f5fc20728e6f2cf616b26507f",
                 "parameters": [
                     {
                         "name": "id",
@@ -519,31 +544,6 @@
                 "responses": {
                     "200": {
                         "description": "Book updated successfully"
-                    },
-                    "404": {
-                        "description": "Book not found"
-                    }
-                }
-            },
-            "delete": {
-                "tags": [
-                    "Books"
-                ],
-                "summary": "Delete a book",
-                "operationId": "1a9c26667c32b8ed5e5770d7a1cc9d5c",
-                "parameters": [
-                    {
-                        "name": "id",
-                        "in": "path",
-                        "required": true,
-                        "schema": {
-                            "type": "integer"
-                        }
-                    }
-                ],
-                "responses": {
-                    "204": {
-                        "description": "Book deleted successfully"
                     },
                     "404": {
                         "description": "Book not found"

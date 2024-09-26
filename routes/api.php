@@ -21,7 +21,7 @@ Route::controller(AuthorController::class)->middleware('auth:sanctum')->group(fu
     Route::get('/all-authors','index');
     Route::post('/add-author','store');
     Route::get('/author-detail/{id}','show');
-    Route::post('/update-author/{id}', 'update');
+    Route::put('/update-author/{id}', 'update');
     Route::delete('/delete-author/{id}','destroy');
     Route::get('/authors/search', 'searchAuthor');
 });
@@ -32,7 +32,7 @@ Route::controller(BookController::class)->middleware('auth:sanctum')->group(func
     Route::get('/books','index');
     Route::post('/add-book','store');
     Route::get('/book-detail/{id}','show');
-    Route::post('/update-book/{id}', 'update');
+    Route::put('/update-book/{id}', 'update');
     Route::delete('/delete-book/{id}','destroy');
     Route::get('/books/search', 'searchBook');
 });
