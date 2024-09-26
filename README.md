@@ -19,7 +19,9 @@ This project is built with the [Laravel](https://laravel.com) framework, which p
 live link: https://book-store-frontend-8ss5.onrender.com 
 - email address: testuser@gmail.com
 - password: 123456789
+
 Link to frontend Repo: https://github.com/katfogy/book-store-frontend
+
 ### 1. API Endpoints
 
 #### Books:
