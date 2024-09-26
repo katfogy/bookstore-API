@@ -98,7 +98,7 @@ Now, the project should be up and running at [http://localhost:8000](http://loca
   
 ## Demo
 
-Once deployed, you can access the live demo here: **[Live Demo](https://bookapi.skyedgeconsortium.ng/api/documentation)** (Replace `#` with your live demo URL).
+Once deployed, you can access the live demo here: **[Live Demo](https://bookapi.skyedgeconsortium.ng/api/documentation)**.
 
 ## Learning Laravel
 
